@@ -1,0 +1,66 @@
+.root {
+  max-width: 240px;
+  min-width: 240px;
+  height: 360px;
+  background-color: black;
+  position: relative;
+  margin: 10px;
+  overflow: hidden;
+  transition: transform 150ms linear;
+  cursor: pointer;
+}
+
+.root:hover {
+  transform: scale(1.02);
+}
+
+.scorePanel {
+  display: flex;
+  padding: 10px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.scoreButton + .scoreButton {
+  margin-left: 10px;
+}
+
+.scoreButton {
+  border: 1px solid black;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+}
+
+.isActive.thumbsUp {
+  background-color: green;
+}
+
+.isActive.thumbsDown {
+  background-color: red;
+}
+
+.image {
+  max-width: 100%;
+  max-height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 600;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  height: 25%;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5); 
+}

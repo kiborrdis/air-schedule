@@ -1,0 +1,14 @@
+.root {
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.content > * {
+  flex: 1;
+}

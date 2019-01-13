@@ -1,0 +1,25 @@
+a {
+  text-decoration: none;
+}
+
+
+.link {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--main-text-color);
+  height: 100%;
+  display: inline-flex;
+  padding: 0 10px;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+}
+
+.link:focus {
+  outline-color: gray;
+}
+
+.active .link {
+  font-weight: 600;
+}

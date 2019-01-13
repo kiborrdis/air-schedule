@@ -1,0 +1,17 @@
+.root {
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  pointer-events: none;
+}
+
+.content {
+  margin: 60px auto;
+  width: 1280px;
+  background-color: var(--primary);
+  min-height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: all;
+}

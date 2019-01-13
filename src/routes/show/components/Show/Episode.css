@@ -1,0 +1,42 @@
+.root {
+  background-color: var(--secondary);
+  padding: 20px;
+  display: flex;
+}
+
+.name {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.fieldName {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.information {
+  display: flex;
+}
+
+
+.overview {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 1.4em;
+}
+
+.information > * + * {
+  margin-left: 20px;
+}
+.image img {
+  width: 300px;
+  min-height: 150px;
+  background-color black: 
+}
+
+.image { 
+  margin-right: 20px;
+  width: 300px;
+  flex-shrink: 0;
+}

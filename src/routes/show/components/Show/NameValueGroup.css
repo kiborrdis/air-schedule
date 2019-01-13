@@ -1,0 +1,52 @@
+.root.grid {
+  font-size: 16px;
+  /*display: flex;*/
+  /*align-items: center;*/
+  /*justify-content: space-between;*/
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-row-gap: 15px;
+
+  display: grid;
+  width: 100%;
+  /*flex-wrap: wrap;*/
+
+
+}
+
+.root.row {
+  display: flex;
+
+  & > * + * {
+    margin-left: 10px;
+  }
+
+  & .field {
+    display: flex;
+    flex-direction: row;
+  }
+
+  & .name::after {
+    display: inline-block;
+    content: ":";
+  }
+
+  & .value {
+    margin-left: 5px;
+  }
+}
+
+
+.name {
+  font-weight: 600;
+}
+
+.field {
+  min-width: 0px;
+}
+
+.value {
+  min-width: 0px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

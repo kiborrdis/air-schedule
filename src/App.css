@@ -1,0 +1,6 @@
+body {
+  background-color: var(--primary);
+  color: var(--main-text-color);
+  font-family: 'Lato', sans-serif;
+}
+

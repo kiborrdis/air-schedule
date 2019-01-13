@@ -1,0 +1,24 @@
+.root {
+  display: flex;
+  flex-direction: row;
+  margin-top: var(--header-height);
+}
+
+.panel {
+  position: fixed;
+  background-color: var(--color-primary-2);
+  top: 70px;
+}
+
+.panelPlaceholder, .panel {
+  width: var(--panel-width);
+  height: calc(100vh - var(--header-height));
+  flex-shrink: 0;
+  
+}
+
+.content {
+  flex: 1;
+  margin-left: 20px;
+  padding-top: 10px;
+}
